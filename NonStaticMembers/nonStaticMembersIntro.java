@@ -14,13 +14,15 @@ public class nonStaticMembersIntro {
     public static void main(String[] args) {
         System.out.println("Inside Main");
 
-        new nonStaticMembersIntro();
-        new nonStaticMembersIntro();
-        new nonStaticMembersIntro();
-        new nonStaticMembersIntro();
+        nonStaticMembersIntro obj = new nonStaticMembersIntro();
+        obj.doSomething();
     }
 
     static{
         System.out.println("Inside Static Block");
+    }
+
+    void doSomething(){
+        System.out.println("Do something");
     }
 }
