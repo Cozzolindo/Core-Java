@@ -15,5 +15,12 @@ public class nonStaticMembersIntro {
         System.out.println("Inside Main");
 
         new nonStaticMembersIntro();
+        new nonStaticMembersIntro();
+        new nonStaticMembersIntro();
+        new nonStaticMembersIntro();
+    }
+
+    static{
+        System.out.println("Inside Static Block");
     }
 }
