@@ -11,5 +11,10 @@ public class explicitCasting {
 
         System.out.println(b);
         System.out.println(ch);
+
+        int y = 130;
+        byte z = (byte)y;
+
+        System.out.println(z);
     }
 }
