@@ -1,3 +1,5 @@
+package DataTypes;
+
 public class primitiveAndObject {
     
     public static void main(String[] args) {
