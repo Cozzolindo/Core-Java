@@ -13,10 +13,8 @@ public class test {
         System.out.println(org.name);
         System.out.println(org);
 
-        event event = new event();
-        event.id = (long) 25935030;
-        event.name = "Casebre de Fragolandia";
-        event.description = "Visitacao";
+        event event = new event((long)25935030,"Casebre de Fragolandia", "Visitacao" );
+        
         System.out.println(event.id);
         System.out.println(event);
         System.out.println(event.name);
