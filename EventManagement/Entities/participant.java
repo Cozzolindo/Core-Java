@@ -1,9 +1,7 @@
 package EventManagement.Entities;
 
-public class participant {
+public class participant extends EM{
     
-    public Long id;
-    public String name;
     public String mail;
     public Boolean checkin;
 }

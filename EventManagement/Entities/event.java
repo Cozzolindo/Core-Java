@@ -1,11 +1,7 @@
 package EventManagement.Entities;
 
-public class event {
+public class event extends EM{
     
-
-	
-    public Long id;
-    public String name;
     public String description;
     public String start;
     public String end;

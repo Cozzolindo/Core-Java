@@ -1,8 +1,6 @@
 package EventManagement.Entities;
 
-public class organizer {
+public class organizer extends EM{
     
-    public Long id;
-    public String name;
 
 }

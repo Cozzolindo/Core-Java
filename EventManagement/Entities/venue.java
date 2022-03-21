@@ -1,9 +1,7 @@
 package EventManagement.Entities;
 
-public class venue {
+public class venue extends EM{
     
-    public Long id;
-    public String nameVenue;
     public String description;
     public String streetAdd;
     public String city;
