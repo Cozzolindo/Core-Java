@@ -13,9 +13,9 @@ public class Manager extends Employee{
     protected void work() {
         
         super.work();
-        System.out.println("Manager is working on "+proj);
+        
         for(int i =0; i<proj.length; i++){
-            System.out.println(proj[i]);
+            System.out.println("Manager is working on "+proj[i]);
         }
     }
 

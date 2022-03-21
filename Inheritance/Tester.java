@@ -13,9 +13,9 @@ public class Tester extends Employee{
     protected void work() {
         
         super.work();
-        System.out.println("Tester is working using "+tools);
+        
         for(int i =0; i<tools.length; i++){
-            System.out.println(tools[i]);
+            System.out.println("Tester is working using "+tools[i]);
         }
     }
 }
