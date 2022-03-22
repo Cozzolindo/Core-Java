@@ -7,5 +7,11 @@ public class Models extends Fiat{
         System.out.println("Inside Models Class.");
         
     }
+
+    @Override
+    void brake() {
+        
+        
+    }
     
 }

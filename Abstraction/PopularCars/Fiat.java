@@ -9,6 +9,8 @@ public abstract class Fiat {
 
     abstract void accelerate();
 
+    abstract void brake();
+
     public static void main(String[] args) {
         System.out.println("Inside Main Method!");
     }
