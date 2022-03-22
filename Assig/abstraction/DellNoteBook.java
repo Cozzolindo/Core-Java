@@ -1,4 +1,4 @@
-package abstraction;
+package Assig.abstraction;
 
 public class DellNoteBook extends DellLaptop {
 
