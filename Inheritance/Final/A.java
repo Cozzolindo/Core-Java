@@ -1,10 +1,10 @@
 package Inheritance.Final;
 
-public final class A {
+public final class A { //<--  Cannot be extended
     
     final static float pi = 3.14f;
 
-    public final void displayValues(){
+    public final void displayValues(){ //<-- Cannot be Overrided
         System.out.println(A.pi);
     }
 
