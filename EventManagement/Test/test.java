@@ -2,6 +2,9 @@ package EventManagement.Test;
 
 import EventManagement.Entities.event;
 import EventManagement.Entities.organizer;
+import EventManagement.Managers.EventManager;
+import EventManagement.Managers.EventManagerImpl;
+import EventManagement.Managers.EventManagerImpl2;
 
 public class test {
     
@@ -20,5 +23,9 @@ public class test {
         System.out.println(event.getName());
         System.out.println(event.getId());
 
+        EventManager em = new EventManagerImpl2();
+        System.out.println(em.create((long)115086800).getId()); 
+        System.out.println(em.create((long)115086800).getDescription()); 
+        System.out.println(em.create((long)115086800).getName()); 
     }
 }
