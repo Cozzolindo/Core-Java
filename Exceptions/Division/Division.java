@@ -26,7 +26,9 @@ public class Division {
             System.out.println("Division: b/a " + c);
         }catch(ArithmeticException AE){
             System.out.println("Can not divide b/a.");
+        }finally{
+            System.out.println("Finally!");
         }
-        
+        System.out.println("Not finally...");
     }
 }
