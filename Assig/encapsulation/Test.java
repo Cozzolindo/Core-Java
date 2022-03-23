@@ -1,4 +1,4 @@
-package encapsulation;
+package Assig.encapsulation;
 
 public class Test {
 
