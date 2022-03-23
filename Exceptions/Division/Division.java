@@ -12,9 +12,21 @@ public class Division {
 
         a = scan.nextInt();
         b = scan.nextInt();
-        c = a/b;
-        System.out.println("Division: a/b " + c);
-        c = b/a;
-        System.out.println("Division: b/a " + c);
+        try{
+            c = a/b;
+            System.out.println("Division: a/b " + c);
+        }catch(ArithmeticException AE){
+            System.out.println("Can't divide a/b.");
+        }
+        
+        
+        
+        try{
+            c = b/a;
+            System.out.println("Division: b/a " + c);
+        }catch(ArithmeticException AE){
+            System.out.println("Can not divide b/a.");
+        }
+        
     }
 }

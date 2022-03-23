@@ -1,4 +1,4 @@
-package multithreading;
+package Assig.multithreading;
 
 public class OddNumberThread implements Runnable {
 

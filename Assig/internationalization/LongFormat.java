@@ -1,4 +1,4 @@
-package internationalization;
+package Assig.internationalization;
 
 import java.text.NumberFormat;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package arrays;
+package Assig.arrays;
 
 public class ArrayReversal {
 

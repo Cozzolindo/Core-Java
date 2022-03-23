@@ -1,4 +1,4 @@
-package collectionswithgenerics;
+package Assig.collectionswithgenerics;
 
 import java.util.TreeMap;
 

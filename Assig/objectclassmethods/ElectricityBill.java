@@ -1,4 +1,4 @@
-package objectclassmethods;
+package Assig.objectclassmethods;
 
 public class ElectricityBill {
 

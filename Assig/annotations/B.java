@@ -1,4 +1,4 @@
-package annotations;
+package Assig.annotations;
 
 public class B {
 
