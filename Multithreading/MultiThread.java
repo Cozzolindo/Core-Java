@@ -21,7 +21,7 @@ public class MultiThread extends Thread{
         
         for(int i = 100; i>-1; i--){
             System.out.print(i+"\t");
-            Thread.sleep(2000);
+            Thread.sleep(500);
 
         }
     }
