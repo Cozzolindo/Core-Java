@@ -15,7 +15,7 @@ public class MultiThread extends Thread{
         mt.setPriority(MAX_PRIORITY);
         mt.setName("MT");
         mt.start();
-        mt.join();
+        
 
         for(int i = 100; i>-1; i--){
             System.out.print(i+"\t");
