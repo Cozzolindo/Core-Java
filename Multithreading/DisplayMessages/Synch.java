@@ -2,7 +2,7 @@ package Multithreading.DisplayMessages;
 
 public class Synch {
     
-    public synchronized void sayHello(String name){
+    public synchronized static void sayHello(String name){
         for(int i = 1; i<=10; i++){
             System.out.println(name+"\t"+i);
             try{

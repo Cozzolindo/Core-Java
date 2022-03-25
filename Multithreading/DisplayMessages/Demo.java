@@ -4,9 +4,8 @@ public class Demo {
     
     public static void main(String[] args) {
         
-        Synch dm = new Synch();
-        MyThread mt = new MyThread(dm, "Carl");
-        MyThread tm = new MyThread(dm, "Johnson");
+        MyThread mt = new MyThread("Carl");
+        MyThread tm = new MyThread("Johnson");
 
         tm.start();
         tm.interrupt();
