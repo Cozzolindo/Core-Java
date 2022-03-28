@@ -12,5 +12,16 @@ public class ThreadGroupDemo {
         System.out.println(child.getName());
         System.out.println(child.getParent().getName());
 
+        Thread thread1 = new Thread(child, "Thread 1");
+        Thread thread2 = new Thread(child, "Thread 2");
+        Thread thread3 = new Thread(child, "Thread 3");
+
+        child.setMaxPriority(4);
+        System.out.println(thread1.getThreadGroup().getName());
+        System.out.println(thread1.getPriority());
+        System.out.println(thread3.getPriority());
+        System.out.println(thread2.getPriority());
+
+
     }
 }
