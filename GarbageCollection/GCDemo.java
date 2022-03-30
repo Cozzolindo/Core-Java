@@ -24,6 +24,6 @@ public class GCDemo {
 
     @Override
     protected void finalize(){
-        System.out.println(this + " Cleaned" + objId);
+        System.out.println(this + " Cleaned " + objId);
     }
 }
