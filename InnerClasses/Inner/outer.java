@@ -1,7 +1,5 @@
 package InnerClasses.Inner;
 
-import javax.swing.event.SwingPropertyChangeSupport;
-import javax.swing.plaf.synth.SynthScrollBarUI;
 
 public class outer {
     
@@ -12,10 +10,21 @@ public class outer {
         static void f2(){
             System.out.println("Inners Static Method");
         }
+
+        void f3(){
+            System.out.println("Non static method");
+        }
     }
+
+    
     public static void main(String[] args) {
         
         outer.f1();
         outer.Inner.f2();
+
+        outer.Inner inner = new outer.Inner();
+
+        inner.f3();
+
     }
 }
