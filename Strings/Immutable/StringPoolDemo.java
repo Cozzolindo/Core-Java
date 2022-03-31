@@ -20,5 +20,8 @@ public class StringPoolDemo {
         System.out.println(s1.equals(s2)); // Compare content of String
         System.out.println(s1.equals(s3));
         System.out.println(s1 == s3);
+        System.out.println("***************************************************");
+        System.out.println(user1 == user2);
+        System.out.println(user2.equals(s1));
 ;    }
 }
