@@ -19,13 +19,20 @@ public class FileInputDemo {
                 while((i = fis.read())!=-1){
                     System.out.println((char)i);
                 }
+
+                
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
+        }finally{
+            try {
+                fis.close();
+                System.out.println("File is closed!");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
