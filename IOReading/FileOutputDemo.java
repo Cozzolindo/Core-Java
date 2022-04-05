@@ -14,7 +14,7 @@ public class FileOutputDemo {
 
         try {
             fis = new FileInputStream("Texts/Me.jpeg");
-            fos = new FileOutputStream("Texts/Copy/Myself.jpg");
+            fos = new FileOutputStream("Texts/Copy/Myself.png");
             int data;
             while((data=fis.read())!=-1){
                 fos.write(data);
