@@ -7,6 +7,8 @@ public class Test {
 
         passenger.setFirstName("Caroline");
         passenger.setLastName("Xavier");
+        passenger.setID(20021996);
         System.out.println(passenger.toString());
+        System.out.println(passenger.hashCode());
     }
 }
