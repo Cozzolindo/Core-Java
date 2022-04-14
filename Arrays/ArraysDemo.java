@@ -8,12 +8,6 @@ public class ArraysDemo {
 
         int arr[] = new int[5];
 
-        arr[0] = new Integer(20);
-        arr[1] = 1;
-        arr[2] = 3;
-        arr[3] = 20;
-        arr[4] = 0;
-
         int lista[] = new int[20];
         for(int i = 0; i < lista.length; i++){
              lista[i] = i*i;
@@ -23,8 +17,19 @@ public class ArraysDemo {
             System.out.println(lista[i]);
        }
 
-       for(int i = 0; i < lista.length; i++){
-        System.out.println(arr[i]);
+       for(int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+        }
+
+        for(int element : arr){
+            arr[element] = element +1;
+        }
+
+        for(int i : arr){
+            System.out.println(i);
+        }
+        for(int ele : lista){
+            System.out.println(ele);
         }
     }
 }
