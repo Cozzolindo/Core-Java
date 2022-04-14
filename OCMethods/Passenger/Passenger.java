@@ -40,4 +40,14 @@ public class Passenger {
     public int hashCode() {
         return ID;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Passenger passenger = (Passenger) obj;
+        if(passenger.ID == this.ID && passenger.firstName == this.firstName && passenger.lastName == this.lastName){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
