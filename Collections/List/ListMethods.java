@@ -1,7 +1,9 @@
 package Collections.List;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListMethods {
     
@@ -33,6 +35,25 @@ public class ListMethods {
             System.out.println("List contains 64");
         }else{
             System.out.println("List does not contains 64");
+        }
+
+        list = list.stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList());
+        System.out.print("Crescent list: ");
+        for(int i = 0; i<list.size(); i++){
+            System.out.print(list.get(i)+ " ");
+        }
+
+        for(int i = 0; i<list.size(); i++){
+            int aux = list.get(i);
+            if(aux == list.get(i+1)){
+                list.remove(i);
+            }
+        }
+
+        System.out.println();
+        System.out.print("Crescent list: ");
+        for(int i = 0; i<list.size(); i++){
+            System.out.print(list.get(i)+ " ");
         }
     }
 }
