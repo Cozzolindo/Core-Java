@@ -7,14 +7,14 @@ public class StringTreeSet {
     
     public static void main(String[] args) {
         
-        Set<String> sett = new TreeSet<>();
+        Set<StringBuffer> sett = new TreeSet<>();
 
-        sett.add("Carlos");
-        sett.add("Carol");
-        sett.add("Luis");
-        sett.add("Kattya");
+        sett.add(new StringBuffer("Carlos"));
+        sett.add(new StringBuffer("Carol"));
+        sett.add(new StringBuffer("Luis"));
+        sett.add(new StringBuffer("Kattya"));
 
-        for (String obj : sett) {
+        for (StringBuffer obj : sett) {
             System.out.println(obj);
         }
     }
