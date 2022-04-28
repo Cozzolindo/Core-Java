@@ -7,7 +7,7 @@ public class StringTreeSet {
     
     public static void main(String[] args) {
         
-        Set<StringBuffer> sett = new TreeSet<>();
+        Set<StringBuffer> sett = new TreeSet<>(new SBComparator());
 
         sett.add(new StringBuffer("Carlos"));
         sett.add(new StringBuffer("Carol"));
