@@ -16,6 +16,23 @@ public class ListMethods {
 
         list.add(2,100);
 
-        System.out.println("After instert: " + list);
+        System.out.println("After insert: " + list);
+
+        List<Integer> slist = new ArrayList<>();
+        for(int i = 2; i <= 100; i*=2){
+            slist.add(i);
+        }
+
+        System.out.println("Second List: "+slist);
+
+        list.addAll(0,slist);
+
+        System.out.println("After addALL: "+list);
+
+        if(list.contains(64)){
+            System.out.println("List contains 64");
+        }else{
+            System.out.println("List does not contains 64");
+        }
     }
 }
