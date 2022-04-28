@@ -16,7 +16,7 @@ public class OtherSets {
 
         //LinkedHashSet<Integer> sett = new LinkedHashSet<>(); // Maintain it's order
 
-        Set<Integer> sett = new TreeSet<>();
+        Set<Integer> sett = new TreeSet<>(); // Generate an ordered list
         for(int i = 0; i<10; i++){
             int num = obj.nextInt(100);
             sett.add(num);
