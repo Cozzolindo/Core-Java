@@ -1,15 +1,16 @@
-package Collections.List;
+package Collections.List.Maps;
 
-import java.util.Collection;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Collection;
 import java.util.Set;
 
-public class HashMapDemo {
- 
+public class LinkedHashMapDemo {
+    
     public static void main(String[] args) {
         
-        Map<String,Integer> map = new HashMap<>();
+        Map<String,Integer> map = new LinkedHashMap<>();
 
         map.put("Carlos", 26);
         map.put("Luis", 24);
@@ -25,6 +26,5 @@ public class HashMapDemo {
         for (String key : keySet) {
             System.out.println("Key: "+key+"\nValue: "+map.get(key));
         }
-
     }
 }
