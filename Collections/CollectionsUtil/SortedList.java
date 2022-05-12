@@ -23,5 +23,9 @@ public class SortedList {
         System.out.println("After Sorting: "+ list);
 
         Collections.sort(list, new MyComparator());
+
+        int X = Collections.binarySearch(list, "K");
+
+        System.out.println("Binary Search with K as key index:"+X);
     }
 }
