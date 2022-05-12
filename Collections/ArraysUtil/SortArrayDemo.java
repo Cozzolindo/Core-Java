@@ -1,6 +1,7 @@
 package Collections.ArraysUtil;
 
 import java.util.Arrays;
+import java.util.List;
 
 import Collections.Comparator.MyComparator;
 
@@ -25,5 +26,9 @@ public class SortArrayDemo {
         for (String eachString : s) {
             System.out.println(eachString);
         }
+
+        List<String> list = Arrays.asList(s);
+
+        System.out.println(list);
     }
 }
