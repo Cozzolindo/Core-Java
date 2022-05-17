@@ -13,7 +13,7 @@ public class TypeCastingProblem {
         List<String> l = new ArrayList<>();
         l.add("Caro");
         l.add("Line");
-        l.add(26);
+        //l.add(26); -> Typecasting problem
 
         String name = (String)l.get(0);
         System.out.println(name);
