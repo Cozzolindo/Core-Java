@@ -2,12 +2,13 @@ package ConcurrentCollections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ArrayListProblem {
     
     public static void main(String[] args) {
         
-        ArrayList<String> courses = new ArrayList<String>();
+        CopyOnWriteArrayList<String> courses = new CopyOnWriteArrayList<String>();
 
         courses.add("Java");
         courses.add("Python");
@@ -17,14 +18,13 @@ public class ArrayListProblem {
         Iterator<String> iterator = courses.iterator();
 
         while(iterator.hasNext()){
-            
-            System.out.println(iterator.next());
             String course = iterator.next();
-            System.out.println(course);
+            
             if(course.equals("C")){
                 courses.remove(course);
             }
-            
         }
+
+        System.out.println(courses);
     }
 }
