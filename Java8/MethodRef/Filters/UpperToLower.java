@@ -15,5 +15,7 @@ public class UpperToLower {
 
         List<String> collect = list.stream().map(s->s.toUpperCase()).collect(Collectors.toList());
         System.out.println(collect);
+        List<String> sort = collect.stream().sorted().collect(Collectors.toList());
+        System.out.println(sort);
     }
 }
